@@ -1,0 +1,52 @@
+/* Restrict styles only to ContentX0 slider */
+.contentX0-slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Restrict image styles only inside the slider */
+.contentX0-slider img {
+  width: 100%;
+  height: auto; /* Dynamic height based on image */
+  object-fit: contain;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Restrict button styles only inside the slider */
+.contentX0-slider button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 10;
+}
+
+/* Specificity to prevent conflicts */
+.contentX0-slider .prev {
+  left: 10px;
+}
+
+.contentX0-slider .next {
+  right: 10px;
+}
+
+.contentX0-slider button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Ensure no global styles from ContentX0 affect other elements */
+.contentX0-slider *,
+.contentX0-slider *::before,
+.contentX0-slider *::after {
+  all: unset; /* Reset all styles */
+}
+

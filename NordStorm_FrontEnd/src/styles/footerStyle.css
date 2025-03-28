@@ -1,0 +1,48 @@
+#footerParent{
+    display: flex;
+    flex-direction: column;
+    background-color: #fffcf7;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+}
+
+#footerdiv1{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 3vw;
+    gap: 3vw;
+}
+
+#footerdiv2{
+    display: flex;
+    gap: 2vw;
+}
+
+#footerColumn{
+    display: flex;
+    flex-direction: column;
+    gap: .2vw;
+}
+
+#footerBoldText{
+    font-size: 1.3vw;
+    font-weight: 700;
+    color: #4c4238;
+    padding: .2vw;
+}
+
+#footerNormalText{
+    font-size: 1vw;
+    font-weight: 400;
+    color: #7e7c78;
+}
+
+#footerSocialDiv{
+    display: flex;
+    gap: .1vw;
+}
+
+#footerSocialDiv1{
+    display: flex;
+    flex-direction: column;
+    gap: .5vw;
+}

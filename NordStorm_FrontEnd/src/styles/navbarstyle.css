@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#Navbar {
+    display: flex;
+    width: 100%;
+    box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+}
+
+#Nav1stSeg {
+    padding: 1vw;
+    display: flex;
+    width: 10%;
+    justify-content: center;
+}
+
+#Nav1stSeg img {
+    height: 3vw;
+}
+
+/* Second Segment */
+#Nav2ndSeg {
+    display: flex;
+    justify-content: space-evenly;
+    width: 20%;
+    height: 100%;
+}
+
+#Nav2ndSeg > div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#Nav2ndSeg > div:hover {
+    background-color: #525051;
+}
+
+.navText {
+    padding: 1.7vw;
+    font-size: 1.5vw;
+    color: #f0f0f0;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Third Segment */
+#Nav3rdSeg {
+    width: 50%;
+}
+
+/* Search Bar */
+#searchbarbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 2.5vw;
+    background-color: white;
+    color: black;
+    border-radius: 1vw;
+    overflow: hidden;
+}
+
+#searchbarbox input {
+    padding: 1.5vw;
+    height: 100%;
+    width: 85%;
+    border: none;
+    background-color: #f0f4f7;
+    color: #818578;
+    font-size: 1.2vw;
+}
+
+#searchbarbox input:focus {
+    outline: none;
+}
+
+#searchbarbox button {
+    width: 15%;
+    height: 100%;
+    background-color: #f0f4f7;
+    color: #818578;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#searchbarbox button:hover {
+    background-color: #e0e4e7; /* Slight hover effect */
+}
+
+/* Fourth Segment */
+#Nav4thSeg {
+    display: flex;
+    gap: 1.5vw;
+    align-items: center;
+    position: relative;
+}
+
+.icon {
+    padding: 1.1vw;
+    font-size: 1.8vw;
+    cursor: pointer;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.icon:hover {
+    border: 1px solid black;
+    border-radius: 1vw;
+}
+
+/* User Overlay */
+.UserOverlay {
+    display: none;
+    position: absolute;
+    left: -50%;
+    top: 85%;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5vw;
+    z-index: 10;
+    padding: 1vw;
+    width: max-content;
+    min-width: 12vw;
+}
+
+.icon:hover .UserOverlay {
+    display: block; /* Show overlay on hover */
+}
+
+/* Login and Signup */
+.LoginSignup {
+    display: flex;
+    gap: 1.5vw;
+    color: black;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    border-bottom: 1px solid #ddd;
+    background-color: #eeeeee;
+    font-size: 1.2vw;
+}
+
+.menuItem2 {
+    display: flex;
+    flex-direction: column;
+    padding: 1vw;
+    color: black;
+}
+
+.menuItem2 div {
+    padding: 0.5vw 0;
+    cursor: pointer;
+    font-size: 1.2vw;
+}
+
+.menuItem2 div:hover {
+    color: #007bff; /* Add hover effect for better interactivity */
+}
+
+.SignIn {
+    border-right: 1px solid black;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+/* Display UserName beside person icon */
+.userName {
+    padding-top: 0.5vw;
+    font-size: 1vw;
+    color:black;
+    margin-left: 0.5vw;
+    font-weight: bold;
+}
+
+/* Logout Button Styling */
+.logoutButton {
+    border: none;
+    background-color: #fe705c;
+    color: white;
+    padding: 0.8vw 1.5vw;
+    border-radius: 0.5vw;
+    cursor: pointer;
+    font-size: 1.2vw;
+}
+
+.logoutButton:hover {
+    background-color: #f05642;
+}
+
+/* Person Icon */
+.personIcon {
+    display: flex;
+}
+
+/* Cart Overlay */
+.CartOverlay {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: white;
+    color: black;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5vw;
+    z-index: 10;
+    padding: 1vw;
+    width: 20vw;
+    min-width: 12vw;
+    font-size: 0.9vw; /* Reduced font size */
+}
+
+.icon:hover .CartOverlay {
+    display: block;
+}
+
+.cartItems {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vw; /* Reduced gap between items */
+}
+
+.cartItem {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.4vw 0; /* Reduced padding for better fit */
+    border-bottom: 1px solid #ddd;
+}
+
+.cartTotal {
+    margin-top: 0.8vw; /* Reduced margin */
+    font-weight: bold;
+    text-align: right;
+    font-size: 1.1vw; /* Slightly larger font for total */
+}
+
+
+

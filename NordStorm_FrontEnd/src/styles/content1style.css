@@ -1,0 +1,24 @@
+.content1Parent {
+    position: relative; /* This is necessary to position the overlay relative to this container */
+    width: 100%;
+}
+
+.content1img img {
+    width: 100%;
+    display: block; /* Ensures no gap below the image */
+}
+
+.imgOverlayText {
+    position: absolute; 
+    bottom: 15%; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 45%; 
+    background-color: white; 
+    color: black; 
+    text-align: center;
+    padding: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    font-size: 4vw;
+    font-weight: 700;
+}

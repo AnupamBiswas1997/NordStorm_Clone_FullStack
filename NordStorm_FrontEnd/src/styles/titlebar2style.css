@@ -1,0 +1,10 @@
+.titlebar2Parent{
+    display: flex;
+    justify-content: center;
+}
+
+.titlebar2Text{
+    padding: 2vw;
+    font-weight: 700;
+    font-size: 2.5vw;
+}

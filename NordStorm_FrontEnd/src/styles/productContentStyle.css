@@ -1,0 +1,121 @@
+#productParentDiv {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    flex-wrap: wrap;
+    gap: 3vw;
+}
+
+#imageSelector {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+#toogleImg img {
+    width: 70%; 
+    height: auto;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    padding: 0.5vw;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+#toogleImg img:hover {
+    transform: scale(1.05);
+}
+
+#actualImg {
+    width: 45%;
+    height: 80vw; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 130vh; 
+    overflow: hidden; 
+}
+
+#actualImg img {
+    width: 100%;
+    height: auto;
+    object-fit: contain; 
+}
+
+#prodDes {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 5vw;
+}
+
+.prodName {
+    font-size: 2vw;
+    font-weight: 700;
+    margin-bottom: 1vw;
+}
+
+.prodSmallText {
+    color: #e7b5af;
+    font-size: 3vw;
+    margin-bottom: 1.5vw;
+}
+
+.prodHeader {
+    font-size: 2vw;
+    margin-bottom: 1vw;
+    color: #6d6d6d;
+}
+
+.prodBullets {
+    font-size: 1.2vw;
+    margin-bottom: 1.5vw;
+}
+
+.prodDescription {
+    font-size: 1vw;
+    color: #444;
+}
+
+#prodPriceDetails {
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 100%;
+    padding: 2vw;
+    gap: 1vw;
+    margin-top: 2vw;
+    align-items: center;
+}
+
+#prodPriceBullet {
+    font-size: 2vw;
+    font-weight: 700;
+    color: #fe6f61;
+    margin-bottom: 1vw;
+}
+
+#stockInfo {
+    font-size: 1.5vw;
+    margin-bottom: 1vw;
+}
+
+#addToCartBtn {
+    width: 100%;
+    background-color: #fe6f61;
+    color: white;
+    font-size: 2vw;
+    padding: 1vw;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+#addToCartBtn:hover {
+    background-color: #f14e3c;
+}
+
+

@@ -1,0 +1,11 @@
+.content2Parent{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    width: 100%;
+    gap: .3vw;
+}
+
+.content2img img{
+    height: 100%;
+    width: 100%;
+}
